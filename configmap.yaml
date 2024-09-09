@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  DB_HOST: "db"
+  DB_DATABASE: "UMS_be"
+  REDIS_HOST: "redis"
+  REDIS_PORT: "6379"
+  PORT: "5052"
+  NODE_ENV: "development"
+
