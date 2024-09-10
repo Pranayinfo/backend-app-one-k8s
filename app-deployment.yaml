@@ -50,15 +50,19 @@ spec:
                 configMapKeyRef:
                   name: app-config
                   key: REDIS_PORT
-            - name: PORT
+            - name: REDIS_QUEUE_HOST
               valueFrom:
                 configMapKeyRef:
                   name: app-config
-                  key: PORT
+                  key: REDIS_QUEUE_HOST
+            - name: REDIS_QUEUE_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: REDIS_QUEUE_PORT 
           volumeMounts:
             - name: app-logs
               mountPath: /app/logs
       volumes:
         - name: app-logs
-          emptyDir: {}  # Can be replaced with a persistent volume if needed
-
+          emptyDir: {}           

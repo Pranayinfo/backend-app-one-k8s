@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 5052
-  type: NodePort
+  type: LoadBalancer
 

@@ -7,6 +7,7 @@ data:
   DB_DATABASE: "UMS_be"
   REDIS_HOST: "redis"
   REDIS_PORT: "6379"
-  PORT: "5052"
+  REDIS_QUEUE_HOST: "redis"
+  REDIS_QUEUE_PORT: "6379"
   NODE_ENV: "development"
 
